@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width: 480px){
+	p {
+		color: yellow;
+	}
+}
+
+@media screen and (min-width: 660px){
+	p {
+		color: purple;
+	}
+}
+
