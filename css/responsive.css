@@ -6,9 +6,28 @@
 	}
 }
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 740px){
+
 	p {
 		color: purple;
+		font-size: 30px;
 	}
+
+	#firstcolumn{
+		width: 50%;
+		padding: 2%;
+		float: left;
+	}
+
+	#secondcolumn{
+		width:50%;
+		padding:2%;
+		float: right;
+	}
+
+	header, section, footer {margin: 30px auto;
+
+
+		}
 }
 
