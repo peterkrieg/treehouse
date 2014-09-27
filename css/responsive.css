@@ -10,7 +10,7 @@
 
 	p {
 		color: purple;
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	#firstcolumn{
@@ -23,6 +23,10 @@
 		width:50%;
 		padding:2%;
 		float: right;
+	}
+
+	section p:nth-child(3n) {
+		color: red;
 	}
 
 	header, section, footer {margin: 30px auto;
