@@ -45,15 +45,93 @@
 
 
 
-var world = "WORLD!!";
+// var world = "WORLD!!";
 
-function writestuff(){
-	var hello = "HELLO";
-	console.log(hello + world);
+// function writestuff(){
+// 	var hello = "HELLO";
+// 	console.log(hello + world);
+// }
+
+// writestuff();
+// console.log(world);
+// console.log(hello);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var carModel = "Toyota";
+// console.log(carModel);
+// console.log("My Car model is: ", carModel);
+
+
+
+
+
+
+// function FirstReverse(str) { 
+
+// 	var o ='';
+// 	var i = str.length;
+
+// 	while (i >= 0 ){
+
+// 		o = o  + str[i];
+// 	  i--;
+
+
+
+// 	}
+
+
+  
+      
+                            
+    
+
+//   // code goes here  
+//   console.log(o);
+         
+// }
+   
+// // keep this function call here 
+// // to see how to enter arguments in JavaScript scroll down
+// FirstReverse("something"); 
+
+
+
+
+
+if (1 < 2, 1<2){
+	console.log("YES ");
+}  else {
+	console.log("\n NO");
 }
 
-writestuff();
-console.log(world);
-console.log(hello);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
