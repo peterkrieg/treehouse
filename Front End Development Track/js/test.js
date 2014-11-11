@@ -113,11 +113,14 @@
 
 
 
-if (1 < 2, 1<2){
-	console.log("YES ");
-}  else {
-	console.log("\n NO");
-}
+// if (1 < 2){
+// 	console.log("YES ");
+// }  else {
+// 	console.log("\n NO");
+// }
+
+
+
 
 
 
