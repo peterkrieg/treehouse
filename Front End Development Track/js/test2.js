@@ -200,6 +200,18 @@ console.log(jack.favoriteColor);
 
 
 
+// ------------------------------------------
+
+
+// var lowNum = parseInt(prompt('what number you want to start at?'));
+// var highNum = parseInt(prompt('what number you want to end at?'));
+
+// alert('the number will be rolled betweeen ' + lowNum + ' and ' + highNum );
+
+// alert(Math.floor(Math.random()*(highNum-lowNum) + lowNum));
+
+
+
 
 
 
