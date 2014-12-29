@@ -1,5 +1,90 @@
-* {
+/** {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+*/
+
+/*The + combinator only targets direct adjacent sibling */
+.sibling p.test + p{
+	color: red;
+}
+
+/*while, the ~ combinator target all siblings after the element */
+.sibling p.test ~ p{
+	background-color: orange;
+}
+
+a[href*='google']:active{
+	color: yellow;
+}
+
+div.test2{
+	margin-top: 100px;
+}
+
+div.test2 ul{
+	list-style-type: none;
+	padding: 0;
+	line-height: 1.75em;
+}
+
+div.test2 ul li:nth-child(n+2){
+	color: red;
+}
+
+div.test2 ul li:nth-last-child(2n){
+	color: green;
+}
+
+
+/*test 3 playing around with advanced selectors*/
+
+div.test3{
+	margin: 100px 0;
+}
+
+div.test3 p:nth-child(3){
+	background-color: tan;
+}
+
+div.test3 p:nth-child(3)::after,
+div.test3 p:nth-child(3)::before{
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+
+div.test3 p:first-child{
+	color: yellow;
+}
+
+div.test3 p:first-child::after{
+	content: "great test!!";
+	margin-left: 5px;
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
