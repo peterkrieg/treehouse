@@ -41,3 +41,27 @@ section.sec2 p {
 section.sec2 .p1 + .p2{
 	color: blue;
 }
+
+/*section 3 */
+
+section.sec3{
+	margin-top: 500px;
+}
+
+section.sec3 p{
+	color: darkblue;
+}
+
+section.sec3 .multicolumn{
+	-webkit-columns: 300px 3;
+	-webkit-column-rule: 2px dotted red;
+	-webkit-column-gap: 20px;
+}
+
+section.sec3 .multicolumn p:last-child{
+	background: pink;
+}
+
+section.sec3 .multicolumn :nth-child(2){
+	background: lightgreen;
+}
