@@ -35,6 +35,13 @@ for(var i = 1; i<4; i++){
 	console.log(array.pop());
 }
 
+doThis();
+
+
+function doThis(){
+	var x =2;
+	return x;
+}
 
 
 

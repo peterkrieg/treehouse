@@ -1,0 +1,43 @@
+section.flex .container, section.flex .flex, section.flex ul{
+	display: -webkit-flex;
+	display: flex;
+	/*-webkit-flex-direction: row-reverse;*/
+	/*-webkit-flex-direction: column-reverse;*/
+	/*default value of flex direction is row, which I will leave as */
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+
+
+}
+
+p{color: red;}
+
+
+section.flex li:nth-of-type(odd){
+	background-color: lightblue;
+}
+
+section.flex li{
+	max-width: 100px;
+}	
+
+
+
+
+
+
+
+/*section 2*/
+
+section.sec2{
+	margin-top: 100px;
+}
+
+section.sec2 p {
+	color: green;
+	background: lightyellow;
+}
+
+section.sec2 .p1 + .p2{
+	color: blue;
+}
