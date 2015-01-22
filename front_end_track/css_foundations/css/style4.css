@@ -1,0 +1,132 @@
+section{
+	margin-bottom: 200px;
+}
+
+
+
+.sec1 p{
+	font-size: 1em;
+	font-size: 18px;
+	text-align: center;
+	background: lightgreen;
+	margin: auto;
+}
+
+
+
+.box{
+	background: tomato;
+	width: 40%;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 30%;
+	border-radius: 10px;
+	-webkit-transition-duration: 1s;
+}
+
+
+
+.box p{
+	background: none;
+	padding-top: 80px;
+}
+
+.box:hover{
+	background: steelblue;
+	border-radius: 100px;
+	-webkit-transition-duration: 4s;
+}
+
+
+/*Box 2  practicing more elaborate transitions*/
+
+.box2{
+	background: gold;
+	-webkit-transition-duration: 2s;
+	-webkit-transition-property: all;
+	color: black;
+}
+
+.box2 p{
+	color: black;
+	-webkit-transition-duration: 3s;
+}
+
+
+
+.box2:hover{
+	background: purple;
+	-webkit-transition-duration: 3s;
+}
+
+.box2:hover p{
+	color: white;
+	-webkit-transition-duration: 3s;
+}
+
+
+/*Box 3*/
+
+.box3{
+	background: gray;
+	-webkit-transition-duration: .3s;
+}
+
+
+.box3:hover{
+	width: 14%;
+	margin-left: 43%;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

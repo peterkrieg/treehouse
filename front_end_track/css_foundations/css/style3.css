@@ -65,3 +65,42 @@ section.sec3 .multicolumn p:last-child{
 section.sec3 .multicolumn :nth-child(2){
 	background: lightgreen;
 }
+
+section.sec3 .multicolumn :nth-child(2){
+	background: lightblue;
+}
+
+
+section.sec3 .multicolumn h1{
+	-webkit-column-span: all;
+	text-align: center;
+}
+
+@media screen and (max-width: 700px){
+	h1{
+		font-size: 1.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
