@@ -80,10 +80,51 @@ section{
 	-webkit-transition-timing-function: ease;
 }
 
+/*Box 4*/
+
+.box4{
+	z-index: -100;
+}
+
+.box4:hover{
+	-webkit-transform: rotate(360deg);
+}
+
+.box5:hover{
+	-webkit-transform: translate(100px, 50px);
+}
+
+.box6:hover{
+	-webkit-transform: rotate(1080deg);
+	-webkit-transition-timing-function: linear;
+}
+
+.box6{
+	background: gold;
+	transition: 2s ease-in;
+}
 
 
 
 
+/*Box 7 and the part with the perspective for 3d transform*/
+
+.sec1{
+	-webkit-perspective: 1000px;
+}
+
+
+.box7{
+	background: green;
+	transition: .1s;
+}
+
+.box7:hover{
+	-webkit-transform: rotateZ(45deg);
+	-webkit-transform: rotateX(90deg);
+	-webkit-transform: rotateY(40deg);
+	transition: 3s;
+}
 
 
 
