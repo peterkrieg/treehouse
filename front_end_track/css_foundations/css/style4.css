@@ -135,6 +135,57 @@ section{
 
 
 
+@-webkit-keyframes colorchange{
+	0% {background: red;
+	    color: white;}
+	100% {background: green;
+	      color: purple;}
+}
+
+@-webkit-keyframes spin{
+	20%{-webkit-transform: rotateX(0deg);}
+	80%{-webkit-transform: rotateX(360deg);}
+	100%{-webkit-transform: rotateX(360deg);}
+}
+
+@-webkit-keyframes shrink{
+	100%{width: 20%;
+			margin-left: 40%;}
+}
+
+
+
+
+
+
+
+.boxtest{
+	margin-top: 100px;
+	width: 60%;
+	margin-left: 20%;
+	height: 300px;
+	background: #023844;
+	border-radius: 10px;
+	-webkit-animation: colorchange 2s linear infinite alternate, 
+	                   spin 4s ease-in-out infinite alternate,
+	                   shrink 2s linear infinite alternate;
+	-webkit-transition: .2s ease;
+}
+
+.boxtest:hover{
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: 2s linear;
+}
+
+.boxtest p{
+	background: none;
+	color: inherit;
+	text-align: center;
+	padding-top: 100px;
+}
+
+
+
 
 
 
