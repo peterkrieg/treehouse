@@ -1,0 +1,89 @@
+html,
+body{
+	height: 100%;
+}
+
+
+header{
+	height: 100px;
+	background: rgba(200, 100, 40, .9);
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 200px;
+	z-index: 2;
+}
+
+header h1{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+header p{
+	font-size: 3em;
+}
+
+section.sec1{
+	margin-top: 200px;
+	background: yellow;
+}
+
+p{
+	width: 40%;
+	margin-left: 30%;
+	font-size: 1.5em;
+}
+
+.sec2 p{
+	background: blue;
+}
+
+.sec2 div :nth-child(even){
+	background: green;
+}
+
+header ul{
+	list-style: none;
+	width: 80%;
+	margin-left: 10%;
+}
+
+header ul li{
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	background: yellow;
+	margin-right: 2px;
+	border: 2px solid black;
+	position: relative;
+	top: 10px;
+	transition: .2s;
+}
+
+header ul li:hover{
+	background: green;
+	color: white;
+	transition: .5s;
+	transform: translateY(1px);
+	transform: rotateX(20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+	header{
+		position: static;
+	}
+}
