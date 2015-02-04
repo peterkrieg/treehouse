@@ -69,7 +69,16 @@ header ul li:hover{
 	transform: rotateX(20deg);
 }
 
-
+footer::after{
+	content: "";
+	display: block;
+	width: 40%;
+	background: red;
+	height: 100px;
+	margin-left: 30%;
+	position: relative;
+	top: 15px;
+}
 
 
 
