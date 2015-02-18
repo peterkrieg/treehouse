@@ -1,4 +1,22 @@
 header p {
   color: blue; }
 
+section.section1 h2 {
+  color: darkred;
+  background: lightblue; }
+section.section1 ul {
+  list-style-type: none; }
+  section.section1 ul li {
+    font-weight: bold; }
+    section.section1 ul li a {
+      color: green;
+      transition: 2s ease; }
+      section.section1 ul li a#testLink {
+        color: steelblue; }
+        section.section1 ul li a#testLink:hover {
+          color: gold; }
+      section.section1 ul li a:hover {
+        color: springgreen;
+        text-decoration: underline; }
+
 /*# sourceMappingURL=style.css.map */

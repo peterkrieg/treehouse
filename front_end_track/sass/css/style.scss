@@ -3,3 +3,30 @@ header{
 		color: blue;
 	}
 }
+
+section.section1{
+	h2{
+		color: darkred;
+		background: lightblue;
+	}
+	ul{
+		list-style-type: none;
+		li{
+			font-weight: bold;
+			a{
+				color: green;
+				transition: 2s ease;
+				&#testLink {
+					color: steelblue;
+					&:hover{
+						color: gold;
+					}
+				}
+				&:hover{
+					color: springgreen;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
