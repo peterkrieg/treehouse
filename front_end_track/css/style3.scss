@@ -1,0 +1,34 @@
+p{
+	color: darkgreen;
+}
+
+.sec1{
+	ul{
+		li{
+			transition: 2s ease;
+			&.color{
+				color: green;
+				background: red;
+				margin-left: 30%;
+				width: 40%;
+				transition: 2s ease;
+				border: 4px solid black;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
