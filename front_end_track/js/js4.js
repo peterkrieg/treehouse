@@ -32,4 +32,23 @@ $(function() {
 
 
 
+
+
+	// Scrolling practice 
+
+	var $window = $(window);
+	var $indicator = $('.indicator')
+
+	$window.on('scroll', function(e) {
+		$('.indicator span').html($window.scrollTop());
+		if ($window.scrollTop() > 145){
+			$indicator.addClass('fixIt');
+		}
+		else{
+			$indicator.removeClass('fixIt');
+			}
+	});
+
+
+
 });
