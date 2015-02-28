@@ -41,4 +41,19 @@ $(document).ready(function(){
 
 
 
+	// Mobile Navigatoin Menu Part
+
+
+	var $link = $('.navbar a');
+	var $select = $('.navbar select');
+	$link.each(function(){
+		var href = $(this).attr('href');
+		var text = $(this).text();
+		$select.append('<option value="' + text + '">' + text + '</option>');
+	})
+
+
+
+
+
 });

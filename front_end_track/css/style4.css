@@ -74,4 +74,41 @@ section.sec2 {
         width: 100%;
         height: 100%; }
 
+.index6 div.header {
+  width: 100%;
+  height: 40px;
+  background: steelblue; }
+  .index6 div.header ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0; }
+    .index6 div.header ul.navbar a {
+      color: tomato;
+      font-size: 16px;
+      transition: .4s ease; }
+      .index6 div.header ul.navbar a:hover {
+        color: gold; }
+    .index6 div.header ul.navbar li {
+      width: 16.6666666666666%;
+      display: inline-block;
+      border-right: 2px solid tomato;
+      text-align: center;
+      height: 40px;
+      padding-top: 8px; }
+  .index6 div.header select {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40%; }
+@media screen and (max-width: 600px) {
+  .index6 div.header ul.navbar li {
+    display: none; }
+    .index6 div.header ul.navbar li a {
+      color: yellow; }
+  .index6 div.header ul.navbar select {
+    display: inline; } }
+
 /*# sourceMappingURL=style4.css.map */
