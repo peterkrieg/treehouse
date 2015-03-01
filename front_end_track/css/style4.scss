@@ -131,7 +131,6 @@ section.sec2{
 		}
 	}
 
-
 	@media screen and (max-width: 600px){
 		div.header{
 			ul.navbar{
@@ -146,8 +145,41 @@ section.sec2{
 				}
 			}
 		}
-		
+	}
+}
 
+
+// Index 7.html
+
+.index7{
+
+	form{
+		width: 800px;
+		margin: auto;
+	}
+
+	input {
+		display: inline-block;
+		width: 20%;
+		margin-top: 40px;
+	}
+
+
+	
+	span.pwhint{
+		color: darkgreen;
+		display: inline-block;
+		left: 0;
+		padding: 10px 20px;
+		margin-left: 50px;
+		background: gold;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	span.fill{
+		display: inline-block;
+		width: 80%;
 	}
 
 
@@ -172,9 +204,6 @@ section.sec2{
 
 
 }
-
-
-
 
 
 

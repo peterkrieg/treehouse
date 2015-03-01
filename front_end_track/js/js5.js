@@ -54,6 +54,67 @@ $(document).ready(function(){
 
 
 
+	// Password Confirmation Part
+
+	var $input = $('.index7 input');
+	$input.each(function(){
+		$(this).next().append('<span class="pwhint"> Password </span>')
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });

@@ -111,4 +111,24 @@ section.sec2 {
   .index6 div.header ul.navbar select {
     display: inline; } }
 
+.index7 form {
+  width: 800px;
+  margin: auto; }
+.index7 input {
+  display: inline-block;
+  width: 20%;
+  margin-top: 40px; }
+.index7 span.pwhint {
+  color: darkgreen;
+  display: inline-block;
+  left: 0;
+  padding: 10px 20px;
+  margin-left: 50px;
+  background: gold;
+  border-radius: 5px;
+  text-align: center; }
+.index7 span.fill {
+  display: inline-block;
+  width: 80%; }
+
 /*# sourceMappingURL=style4.css.map */
