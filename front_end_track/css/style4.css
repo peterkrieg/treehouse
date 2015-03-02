@@ -117,7 +117,9 @@ section.sec2 {
 .index7 input {
   display: inline-block;
   width: 20%;
-  margin-top: 40px; }
+  margin: 15px 0; }
+.index7 input:focus {
+  border: none !important; }
 .index7 span.pwhint {
   color: darkgreen;
   display: inline-block;

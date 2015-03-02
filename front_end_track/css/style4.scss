@@ -161,7 +161,11 @@ section.sec2{
 	input {
 		display: inline-block;
 		width: 20%;
-		margin-top: 40px;
+		margin: 15px 0;
+	}
+
+	input:focus{
+		border: none !important;
 	}
 
 

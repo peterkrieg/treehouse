@@ -58,7 +58,37 @@ $(document).ready(function(){
 
 	var $input = $('.index7 input');
 	$input.each(function(){
-		$(this).next().append('<span class="pwhint"> Password </span>')
+		$(this).next().append('<span class="pwhint"> Password Must be 8 character or more </span>')
+		$('.pwhint').hide();
+		$(this).on('focus', function(){
+			$(this).next().children().fadeIn(500);
+		$(this).on('blur', function(){
+			$(this).next().children().fadeOut(300);
+		})
+		})
+	})
+
+	var $pw = $('.index7 input.password');
+	var $pw2 = $('.index7 input.password2');
+
+	$pw.on('keydown', function(e){
+		if($pw.val().length + 1 > 8){
+			$(this).next().children().fadeOut(200);
+		}
+		else{
+				$(this).next().children().fadeIn(200);
+			}
+	})
+
+	$pw2.keydown(function(e){
+		console.log($pw.val());
+		console.log($pw2.val());
+		if($pw.val() === $pw2.val()){
+			$(this).next().children().text('passwords match!!');
+		}
+		else{
+			$(this).next().children().text("they don't match");
+		}
 	})
 
 
