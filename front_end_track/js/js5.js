@@ -93,7 +93,13 @@ $(document).ready(function(){
 
 
 
+// Drawing app part
 
+var $color = $('.index8 ul div');
+
+$color.each(function(){
+	$(this).css('background', $(this).attr('class'));
+})
 
 
 
