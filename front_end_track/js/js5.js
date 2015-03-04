@@ -89,7 +89,7 @@ $(document).ready(function(){
 		else{
 			$(this).next().children().text("they don't match");
 		}
-	})
+	});
 
 
 
@@ -99,7 +99,28 @@ var $color = $('.index8 ul div');
 
 $color.each(function(){
 	$(this).css('background', $(this).attr('class'));
-})
+});
+
+// Prevents all links from going to somewhere else on page
+
+var $link = $('.index8 a');
+$link.on('click', function(event){
+	event.preventDefault();
+});
+
+var $createColor = $('.index8 .createColor');
+$createColor.on('click', function(event){
+	var color = prompt('what color would you like to pick?  express like #eh23b9');
+	$(this).parent().prev().append('<div class="' +color+ '"></div>');
+	var $color = $('.index8 ul div');
+
+$color.each(function(){
+	$(this).css('background', $(this).attr('class'));
+});
+
+
+});
+
 
 
 
