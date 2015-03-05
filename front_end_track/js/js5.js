@@ -126,11 +126,40 @@ $(document).ready(function(){
 	$('.index8 ul').on('click', 'a', function(e){
 		e.preventDefault();
 		$('.index8 ul div').removeClass('selected');
-		console.log($(this));
 		$(this).children().addClass('selected');
 	});
 
+	// canvas drawing part
 
+	var lastEvent;
+	var e;
+	var mouseDown = false;
+
+	var context = $('canvas')[0].getContext('2d');
+
+	var $canvas = $('canvas');
+
+	$canvas.mousedown(function(e){
+		lastEvent = e;
+		mouseDown = true;
+	}).mousemove(function(e){
+		if(mouseDown){
+			context.beginPath();
+			context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
+			context.lineTo(e.offsetX, e.offsetY);
+			context.stroke();
+			lastEvent = e;
+		}
+	}).mouseup(function(){
+		mouseDown = false;
+	});
+
+
+
+
+
+
+	
 
 
 
