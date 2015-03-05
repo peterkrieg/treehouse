@@ -187,10 +187,18 @@ section.sec2{
 	}
 }
 
+// Index 8 drawing app
 
 .index8{
 	font-size: 0;
 	text-align: center;
+	h1:last-of-type{
+		margin-bottom: 100px;
+	}
+	p{
+		font-size: 24px;
+		line-height: 3em;
+	}
 	canvas{
 		width: 800px;
 		height: 400px;
@@ -198,7 +206,7 @@ section.sec2{
 	}
 
 	ul.colorChoices{
-		margin-top: 25px;
+		margin: 25px 0 25px 0;
 		width: 100%;
 		width: 60%;
 		margin-left: 20%;
@@ -215,9 +223,16 @@ section.sec2{
 		&.createColor{
 			width: 100px;
 			border-radius: 10px;
-			margin: 10px 0 0 40px;
+			margin: 10px 0 25px 40px;
 			background: steelblue;
 			color: white;
+		}
+		&:not(.createColor):hover{
+			border: 5px solid black;
+			transition: .4s ease;
+		}
+		&.selected{
+			border: 5px solid black;
 		}
 	}
 

@@ -93,33 +93,91 @@ $(document).ready(function(){
 
 
 
-// Drawing app part
-
-var $color = $('.index8 ul div');
-
-$color.each(function(){
-	$(this).css('background', $(this).attr('class'));
-});
-
-// Prevents all links from going to somewhere else on page
-
-var $link = $('.index8 a');
-$link.on('click', function(event){
-	event.preventDefault();
-});
-
-var $createColor = $('.index8 .createColor');
-$createColor.on('click', function(event){
-	var color = prompt('what color would you like to pick?  express like #eh23b9');
-	$(this).parent().prev().append('<div class="' +color+ '"></div>');
-	var $color = $('.index8 ul div');
-
-$color.each(function(){
-	$(this).css('background', $(this).attr('class'));
-});
+// ---------------------Drawing app part--------------------------------
 
 
-});
+
+// Initial setup
+	// Prevents all links from going to somewhere else on page
+	var $link = $('.index8 a');
+	$link.on('click', function(event){
+		event.preventDefault();
+	});
+
+
+	// Colors the first 3 divs
+	$('.index8 ul div').each(function(){
+		$(this).css('background', $(this).attr('class'));
+	});
+
+	var $createColorButton = $('.index8 .createColor');
+	$createColorButton.on('click', function(){
+		var newColor = prompt('what color do you want to add?  hex format');
+		console.log(newColor);
+		var $newDiv = $('<a href="http://google.com"><div class="'+newColor+'"></div></a>');
+		console.log($newDiv);
+		$createColorButton.parent().prev().append($newDiv);
+		$('.index8 ul div').each(function(){
+			$(this).css('background', $(this).attr('class'));
+		});
+	});
+
+
+	$('.index8 ul').on('click', 'a', function(e){
+		e.preventDefault();
+		$('.index8 ul div').removeClass('selected');
+		console.log($(this));
+		$(this).children().addClass('selected');
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	var $headingBottom = $('h1.toggleP');
+	$headingBottom.next().hide();
+	$headingBottom.click(function(){
+		$(this).next().toggle();
+	});
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
