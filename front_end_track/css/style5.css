@@ -356,7 +356,22 @@ td,
 th {
   padding: 0; }
 
+@media screen and (max-width: 800px) {
+  ul {
+    background: yellow; }
+    ul li {
+      color: purple; } }
+
 p {
-  color: #88bbee; }
+  font-weight: bold;
+  color: #abce13;
+  font-style: italic;
+  width: 50%;
+  margin-left: 25%;
+  background: tomato; }
+  p:hover {
+    color: blue;
+    transition: 2s ease;
+    font-size: 30px; }
 
 /*# sourceMappingURL=style5.css.map */

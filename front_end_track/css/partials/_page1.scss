@@ -1,3 +1,24 @@
+
+
+ul{
+	@media screen and (max-width: 800px){
+		background: yellow;
+		li{
+			color: purple;
+		}
+	}
+}
+
 p{
-	color: saturate($primaryColor, 50%);
+	font-weight: bold;
+	color: #abce13;
+	font-style: italic;
+	width: 50%;
+	margin-left: 25%;
+	background: tomato;
+	&:hover{
+		color: blue;
+		transition: 2s ease;
+		font-size: 30px;;
+	}
 }
