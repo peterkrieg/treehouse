@@ -1,0 +1,23 @@
+.index10 div.container {
+  width: 50%;
+  margin-left: 25%;
+  background: #eee; }
+  @media (max-width: 1000px) {
+    .index10 div.container {
+      width: 100%;
+      margin-left: 0; } }
+.index10 section {
+  width: 100%;
+  margin-bottom: 100px; }
+.index10 h1 {
+  padding-bottom: 5px;
+  border-bottom: 4px solid #22313F;
+  font-family: 'Playfair Display', serif; }
+  .index10 h1 span {
+    margin-left: 20px; }
+.index10 input {
+  margin: 10px 0 0 20px;
+  width: 40%;
+  margin-right: 100px; }
+
+/*# sourceMappingURL=style6.css.map */
