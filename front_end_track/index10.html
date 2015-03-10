@@ -1,4 +1,4 @@
-<!-- This is web app to do list, for interactive JS pages treehouse course.  This has all of its javascript with NO JQUERY-->
+<!-- This is web app to do list, for interactive JS pages treehouse course.  treehouse course used no jquery, but I didn't see the point.. -->
 
 <!doctype html>
 <html lang="en-us">
@@ -13,6 +13,7 @@
 
 	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style6.css">
 	
 </head>
@@ -21,34 +22,30 @@
 	<div class="container">
 		<section class="addItem">
 			<h1> <span> Add Item <span> </h1>
-			<input type="text">
-			<button>Add</button>
-		
-
+			<div class="taskContainer">
+				<input  type="text">
+				<button class="addTaskButton">Add</button>
+			</div>
 		</section>
 
 		<section class="toDo">
 			<h1> <span> To Do <span> </h1>
-
-			<input type="text">
-
-			<button> Edit </button>
-			<button>Delete</button>
-
-			
-
+			<div class="taskContainer">
+				<input type="checkbox" >
+				<p>Here is a task to do </p>
+				<button class="edit">Edit</button>
+				<button class="delete">Delete</button>
+			</div>
 		</section>
-
-
 
 		<section class="completed">
 			<h1><span>Completed Tasks</span></h1>
-			<input type="text">
-			<button>Edit</button>
-			<button>Delete</button>
-			
-
-
+			<div class="taskContainer">
+				<input type="checkbox" checked="checked">
+				<p>here is task to do</p>
+				<button class="edit">Edit</button>
+				<button class="delete">Delete</button>
+			</div>
 		</section>
 	</div>
 

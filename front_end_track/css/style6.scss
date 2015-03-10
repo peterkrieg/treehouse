@@ -1,4 +1,5 @@
 .index10{
+	font-size: 25px;
 	div.container{
 		width: 50%;
 		margin-left: 25%;
@@ -20,10 +21,39 @@
 		border-bottom: 4px solid #22313F;
 		font-family: 'Playfair Display', serif;
 	}
+	
 	input{
-		margin: 10px 0 0 20px;
+		font-size: 20px;
+		&:not([type="checkbox"]){
 		width: 40%;
 		margin-right: 100px;
+		}
+		&:checked{
+			color: red;
+		}
+	}
+	
+	button{
+		float: right;
+		font-size: 15px;
+
+	}
+	p{
+		display: inline-block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		margin-left: 10px;
+	}
+	.toDo p{
+		color: red;
+	}
+	.completed p{
+		text-decoration: line-through;
+	}
+
+	div.taskContainer{
+		background: #ddd;
+		padding: 20px;
+		margin-bottom: 10px;
 	}
 
 

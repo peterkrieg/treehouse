@@ -1,23 +1,43 @@
-.index10 div.container {
-  width: 50%;
-  margin-left: 25%;
-  background: #eee; }
-  @media (max-width: 1000px) {
-    .index10 div.container {
-      width: 100%;
-      margin-left: 0; } }
-.index10 section {
-  width: 100%;
-  margin-bottom: 100px; }
-.index10 h1 {
-  padding-bottom: 5px;
-  border-bottom: 4px solid #22313F;
-  font-family: 'Playfair Display', serif; }
-  .index10 h1 span {
-    margin-left: 20px; }
-.index10 input {
-  margin: 10px 0 0 20px;
-  width: 40%;
-  margin-right: 100px; }
+.index10 {
+  font-size: 25px; }
+  .index10 div.container {
+    width: 50%;
+    margin-left: 25%;
+    background: #eee; }
+    @media (max-width: 1000px) {
+      .index10 div.container {
+        width: 100%;
+        margin-left: 0; } }
+  .index10 section {
+    width: 100%;
+    margin-bottom: 100px; }
+  .index10 h1 {
+    padding-bottom: 5px;
+    border-bottom: 4px solid #22313F;
+    font-family: 'Playfair Display', serif; }
+    .index10 h1 span {
+      margin-left: 20px; }
+  .index10 input {
+    font-size: 20px; }
+    .index10 input:not([type="checkbox"]) {
+      width: 40%;
+      margin-right: 100px; }
+    .index10 input:checked {
+      color: red; }
+  .index10 button {
+    float: right;
+    font-size: 15px; }
+  .index10 p {
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 10px; }
+  .index10 .toDo p {
+    color: red; }
+  .index10 .completed p {
+    text-decoration: line-through; }
+  .index10 div.taskContainer {
+    background: #ddd;
+    padding: 20px;
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=style6.css.map */
